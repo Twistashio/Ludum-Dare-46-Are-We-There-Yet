@@ -8,7 +8,7 @@ public class MainMenuHander : MonoBehaviour
 {
     public void StartGame()
     {
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene("Level");
     }
 
     public void Scores()
