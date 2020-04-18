@@ -297,7 +297,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 38396092}
-  Start_Speed: 5000
+  Start_Speed: 0
   Acceleration: 250
 --- !u!54 &38396092
 Rigidbody:

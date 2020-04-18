@@ -11,7 +11,7 @@ public class DrivingControler : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        rb.velocity=new Vector3(-Start_Speed,0,0);
     }
 
     // Update is called once per frame
