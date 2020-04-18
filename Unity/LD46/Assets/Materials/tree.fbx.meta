@@ -1,45 +1,25 @@
 fileFormatVersion: 2
-guid: 9e668fd7d04da4ede8168b776d81f3d8
+guid: a516d55210081410a8726f55cae5485d
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
-    100002: Cube
-    100004: Torus
-    100006: Torus.001
-    100008: Torus.002
-    100010: Torus.003
+    100002: Cylinder
+    100004: Cylinder.001
     400000: //RootNode
-    400002: Cube
-    400004: Torus
-    400006: Torus.001
-    400008: Torus.002
-    400010: Torus.003
+    400002: Cylinder
+    400004: Cylinder.001
     2100000: No Name
     2100002: Material.001
     2100004: Material.002
-    2100006: Material.003
-    2100008: Material.007
-    2100010: Material.006
-    2100012: Material.004
-    2100014: Material.005
     2300000: //RootNode
-    2300002: Cube
-    2300004: Torus
-    2300006: Torus.001
-    2300008: Torus.002
-    2300010: Torus.003
+    2300002: Cylinder
+    2300004: Cylinder.001
     3300000: //RootNode
-    3300002: Cube
-    3300004: Torus
-    3300006: Torus.001
-    3300008: Torus.002
-    3300010: Torus.003
-    4300000: Cube
-    4300002: Torus
-    4300004: Torus.001
-    4300006: Torus.002
-    4300008: Torus.003
+    3300002: Cylinder
+    3300004: Cylinder.001
+    4300000: Cylinder
+    4300002: Cylinder.001
   externalObjects: {}
   materials:
     importMaterials: 1
