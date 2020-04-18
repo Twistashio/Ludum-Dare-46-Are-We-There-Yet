@@ -1,13 +1,13 @@
 ###
 # Unity folders and files
 ###
-/Unity/[Aa]ssets/AssetStoreTools*
-/Unity/[Bb]uild/
-/Unity/[Ll]ibrary/
-/Unity/[Ll]ocal[Cc]ache/
-/Unity/[Oo]bj/
-/Unity/[Tt]emp/
-/Unity/[Uu]nityGenerated/
+/Unity/LD46/[Aa]ssets/AssetStoreTools*
+/Unity/LD46/[Bb]uild/
+/Unity/LD46/[Ll]ibrary/
+/Unity/LD46/[Ll]ocal[Cc]ache/
+/Unity/LD46/[Oo]bj/
+/Unity/LD46/[Tt]emp/
+/Unity/LD46/[Uu]nityGenerated/
 # file on crash reports
 sysinfo.txt
 # Unity3D generated meta files
