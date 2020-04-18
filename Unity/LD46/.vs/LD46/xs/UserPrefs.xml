@@ -1,0 +1,28 @@
+﻿<Properties StartupConfiguration="{B1DFBC55-95C2-9078-623F-D1A132B80019}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/DrivingControler.cs">
+    <Files>
+      <File FileName="Assets/Scripts/CarMovementControls.cs" Line="7" Column="3" />
+      <File FileName="Assets/DrivingControler.cs" Line="19" Column="38" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="LD46" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="Scripts" expanded="True">
+                <Node name="DrivingControler.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="e2903c34-9c36-4acb-a161-6d19bffd7335" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
