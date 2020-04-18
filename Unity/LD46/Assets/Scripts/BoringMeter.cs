@@ -36,7 +36,7 @@ public class BoringMeter : MonoBehaviour
             yield return new WaitForSeconds(timeToWait);
             slideValue += fillQuantity;
             StartCoroutine(FillSlider());
-            Debug.Log("Done");
+           
         }
     }
 }

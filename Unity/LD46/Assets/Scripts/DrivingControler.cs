@@ -12,6 +12,8 @@ public class DrivingControler : MonoBehaviour
    public float Acceleration;
    public float tiltSpeed;
 
+    public static bool CanMove;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -19,23 +21,32 @@ public class DrivingControler : MonoBehaviour
 
         // Multiplies the lane switching speed so we can imput lower values into the editor
         tiltSpeed = tiltSpeed * 10;
+
+        //If the player can move the car or not
+        CanMove = true;
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
-       
 
-       rb.AddForce(-Acceleration * Time.deltaTime,0,0);
-
-        if (Input.GetKey("d"))
+        if (CanMove == true)
         {
-            rb.AddForce(0,0, tiltSpeed * Time.deltaTime);
-        }
+            rb.AddForce(-Acceleration * Time.deltaTime, 0, 0);
 
-        if (Input.GetKey("a"))
-        {
-            rb.AddForce(0, 0, -tiltSpeed * Time.deltaTime);
+            if (Input.GetKey("d"))
+            {
+                rb.AddForce(0, 0, tiltSpeed * Time.deltaTime);
+            }
+
+            if (Input.GetKey("a"))
+            {
+                rb.AddForce(0, 0, -tiltSpeed * Time.deltaTime);
+            }
+            else
+            {
+                return;
+            }
         }
     }
 }
