@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &7457462260104447721
+--- !u!1 &7791205367320197103
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,9 +8,9 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 7457462260104447727}
-  - component: {fileID: 7457462260104447720}
-  - component: {fileID: 7457462260104447726}
+  - component: {fileID: 7791205367320197100}
+  - component: {fileID: 7791205367320197102}
+  - component: {fileID: 7791205367320197101}
   m_Layer: 0
   m_Name: LevelGenerator
   m_TagString: Untagged
@@ -18,48 +18,50 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &7457462260104447727
+--- !u!4 &7791205367320197100
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7457462260104447721}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_GameObject: {fileID: 7791205367320197103}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7457462260104447720
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!114 &7791205367320197102
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7457462260104447721}
+  m_GameObject: {fileID: 7791205367320197103}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 38867b8f8f43e6e4683dd5a6ba641f16, type: 3}
+  m_Script: {fileID: 11500000, guid: 47f220655bf654b2caab0082cb02ce1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &7791205367320197101
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7791205367320197103}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c646528697484482b35fc480b2a9cf8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   levelChunkData:
-  - {fileID: 11400000, guid: 629091d918fc54248ab0f6c48245bc16, type: 2}
-  - {fileID: 11400000, guid: 66d6c252bd8b946a290564516a6a7970, type: 2}
-  - {fileID: 11400000, guid: facf0b263b71f4d7c8edfe46adcbe197, type: 2}
-  firstChunk: {fileID: 11400000, guid: 629091d918fc54248ab0f6c48245bc16, type: 2}
+  - {fileID: 11400000, guid: 298010fd27c20431483d77b32acaf3b4, type: 2}
+  - {fileID: 11400000, guid: 7463b8164deb2489f984a0ccecfc3274, type: 2}
+  - {fileID: 11400000, guid: e8b5f2723e7374d2f87573854b3435d2, type: 2}
+  - {fileID: 11400000, guid: 986d4e86a4386478cb0769246c84e8c8, type: 2}
+  - {fileID: 11400000, guid: 5e1457ca27b44489f8a58515cd673619, type: 2}
+  firstChunk: {fileID: 11400000, guid: 298010fd27c20431483d77b32acaf3b4, type: 2}
   spawnOrigin: {x: 0, y: 0, z: 0}
-  chunksToSpawn: 1
---- !u!114 &7457462260104447726
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7457462260104447721}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fc2928c011f79f54e934986742eba67f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  chunksToSpawn: 10
