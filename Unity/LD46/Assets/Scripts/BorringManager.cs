@@ -15,6 +15,8 @@ public class BorringManager : MonoBehaviour
     public Animation forward;
     public Animation backward;
 
+    public Slider keySlider;
+
 
     public void Start()
     {
@@ -70,7 +72,7 @@ public class BorringManager : MonoBehaviour
     public void Keys()
     {
         
-       
+      
             BoringMeter.slideValue = BoringMeter.slideValue - removeValue;
         
     }
