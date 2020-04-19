@@ -12,6 +12,9 @@ public class BorringManager : MonoBehaviour
 
     public GameObject boringMenuUI;
 
+    public Animation forward;
+    public Animation backward;
+
 
     public void Start()
     {
@@ -43,7 +46,7 @@ public class BorringManager : MonoBehaviour
         boringMenuUI.SetActive(true);
 
         //SLows down time when menu is open 
-        Time.timeScale = 0.7f;
+        Time.timeScale = 0.3f;
 
         //turns of player movement
         DrivingControler.CanMove = false;
@@ -67,9 +70,8 @@ public class BorringManager : MonoBehaviour
     public void Keys()
     {
         
-        if (BoringMeter.slideValue > removeValue)
-        {
+       
             BoringMeter.slideValue = BoringMeter.slideValue - removeValue;
-        }
+        
     }
 }
