@@ -5,20 +5,32 @@ using UnityEngine.UI;
 
 public class BorringManager : MonoBehaviour
 {
-    public float removeValue = 0.3f;
+    public float keysRemoveValue = 0.3f;
+    public float toysRemoveValue = 0.5f;
+    public float tabletRemoveValue = 0.73f;
+
     private float value = 3f;
 
     //state of the menu closed/open
     public static bool boringMenu;
     public static bool keysPressed;
+    public static bool toysPressed;
+    public static bool tabletPressed;
+
 
     public GameObject boringMenuUI;
-    public Button uiButton;
+
+    public Button keyButton;
+    public Button toysButton;
+    public Button tabletButton;
 
     public Animation forward;
     public Animation backward;
 
     public Slider keySlider;
+    public Slider toySlider;
+    public Slider tabletSlider;
+
 
 
     public void Start()
@@ -74,14 +86,14 @@ public class BorringManager : MonoBehaviour
 
     public void Keys()
     {
-
+        
             if (keysPressed == true && DrivingControler.CanMove == false)
             {
-                BoringMeter.slideValue = BoringMeter.slideValue - removeValue;
+                BoringMeter.slideValue = BoringMeter.slideValue - keysRemoveValue;
                 keysPressed = false;
                 keySlider.value = 0f;
                 value = 3f;
-            uiButton.interactable = true;
+            keyButton.interactable = true;
 
             }
             else
@@ -89,13 +101,13 @@ public class BorringManager : MonoBehaviour
                 if (DrivingControler.CanMove == false)
                 {
                     StartCoroutine(keyCounter());
-                uiButton.interactable = false;
+                keyButton.interactable = false;
                 
                 }
                 else
                 {
                     keySlider.value = 0f;
-                uiButton.interactable = true;
+                keyButton.interactable = true;
                 }
             }
 
@@ -122,6 +134,65 @@ public class BorringManager : MonoBehaviour
 
         }
         
+
+
+    }
+
+    public void Toys()
+    {
+        if (Money.moneyAmount >= 5)
+        {
+            if (toysPressed == true && DrivingControler.CanMove == false)
+            {
+                BoringMeter.slideValue = BoringMeter.slideValue - toysRemoveValue;
+                toysPressed = false;
+                toySlider.value = 0f;
+                value = 3f;
+                toysButton.interactable = true;
+
+            }
+            else
+            {
+                if (DrivingControler.CanMove == false)
+                {
+                    StartCoroutine(toysCounter());
+                    toysButton.interactable = false;
+
+                }
+                else
+                {
+                    toySlider.value = 0f;
+                    toysButton.interactable = true;
+                }
+            }
+        }
+        else
+        {
+            toysButton.interactable = false;
+        }
+    }
+
+
+    IEnumerator toysCounter()
+    {
+
+
+
+        yield return new WaitForSeconds(0.3f);
+        toySlider.value += 0.2f;
+
+        if (toySlider.value == 1f)
+        {
+
+            toysPressed = true;
+            Toys();
+        }
+        else
+        {
+            Toys();
+
+        }
+
 
 
     }

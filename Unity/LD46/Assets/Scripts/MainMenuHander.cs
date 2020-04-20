@@ -6,13 +6,19 @@ using UnityEngine.SceneManagement;
 
 public class MainMenuHander : MonoBehaviour
 {
+
+    
     public void StartGame()
     {
-        SceneManager.LoadScene("Level");
+        Time.timeScale = 1f;
+        SceneManager.LoadScene("TesterScene");
+        GameManager.gameHasEnded = false;
+        Money.moneyAmount = 0f;
     }
 
     public void Scores()
     {
+        Time.timeScale = 1f;
         Debug.Log("Scores");
     }
 
@@ -20,5 +26,17 @@ public class MainMenuHander : MonoBehaviour
     {
         Application.Quit();
     }
+
+    public void MainMenu()
+    {
+        Time.timeScale = 1f;
+        SceneManager.LoadScene("MainMenu");
+        Debug.Log("MainMenu");
+        GameManager.gameHasEnded = false;
+        Money.moneyAmount = 0f;
+
+
+    }
+
 
 }

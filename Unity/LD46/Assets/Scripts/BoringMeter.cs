@@ -32,7 +32,7 @@ public class BoringMeter : MonoBehaviour
 
         if (slideValue > 2.5 && isFailed == false)
         {
-            StartCoroutine(Failed());
+            Fail();
         }
         else
         {
@@ -42,23 +42,18 @@ public class BoringMeter : MonoBehaviour
 
     public IEnumerator FillSlider()
     {
-
+        if (GameManager.gameHasEnded == false)
+        { 
         yield return new WaitForSeconds(timeToWait);
         slideValue += fillQuantity;
         StartCoroutine(FillSlider());
-
+        }
     }
 
-    public IEnumerator Failed()
+    public void Fail()
     {
-
-        Debug.Log("You Failed");
-        
-
-        yield return new WaitForSeconds(5f);
-
-        SceneManager.LoadScene("TesterScene");
-        
+       
+        FindObjectOfType<GameManager>().EndGame();
 
     }
 }

@@ -1,30 +1,33 @@
 ﻿<Properties StartupConfiguration="{B1DFBC55-95C2-9078-623F-D1A132B80019}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Score.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/BorringManager.cs">
     <Files>
-      <File FileName="Assets/Scripts/CarMovementControls.cs" Line="52" Column="1" />
-      <File FileName="Assets/Scripts/DrivingControler.cs" Line="40" Column="14" />
-      <File FileName="Assets/Scripts/MainMenuHander.cs" />
-      <File FileName="Assets/Scripts/BorringManager.cs" />
-      <File FileName="Assets/Scripts/BoringMeter.cs" />
-      <File FileName="Assets/Scripts/TriggerExit.cs" Line="11" Column="1" />
-      <File FileName="Assets/Scripts/LevelChunkData.cs" />
-      <File FileName="Assets/Scripts/LevelLayoutGenerator.cs" />
-      <File FileName="Assets/Scripts/Camera.cs" />
-      <File FileName="Assets/Scripts/GameOver.cs" Line="9" Column="1" />
-      <File FileName="Assets/GameManager.cs" Line="12" Column="1" />
-      <File FileName="Assets/PlayerCollision.cs" Line="19" Column="1" />
-      <File FileName="Assets/PlayerCollision.cs" Line="19" Column="1" />
-      <File FileName="Assets/Score.cs" Line="7" Column="20" />
+      <File FileName="Assets/PlayerCollision.cs" Line="25" Column="14" />
+      <File FileName="Assets/GameManager.cs" Line="46" Column="1" />
+      <File FileName="Assets/Scripts/BoringMeter.cs" Line="47" Column="28" />
+      <File FileName="Assets/Score.cs" Line="19" Column="10" />
+      <File FileName="Assets/Scripts/MainMenuHander.cs" Line="37" Column="1" />
+      <File FileName="Assets/Scripts/collectable.cs" Line="15" Column="1" />
+      <File FileName="Assets/Scripts/Money.cs" Line="17" Column="49" />
+      <File FileName="Assets/Scripts/BorringManager.cs" Line="146" Column="14" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="LD46" expanded="True">
             <Node name="Assets" expanded="True">
-              <Node name="Scripts" expanded="True" />
-              <Node name="Score.cs" selected="True" />
+              <Node name="Scripts" expanded="True">
+                <Node name="BorringManager.cs" selected="True" />
+              </Node>
             </Node>
           </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+      <Pad Id="MonoDevelop.UnitTesting.TestPad">
+        <State name="__root__">
+          <Node name="LD46" expanded="True" selected="True" />
         </State>
       </Pad>
     </Pads>
