@@ -16,4 +16,5 @@ public class LevelChunkData : ScriptableObject
     public Direction entryDirection;
     public Direction exitDirection;
 
+    
 }

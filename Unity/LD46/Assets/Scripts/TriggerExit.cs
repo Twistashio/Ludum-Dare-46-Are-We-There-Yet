@@ -13,19 +13,13 @@ public class TriggerExit : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        CarTag carTag = other.GetComponent<CarTag>();
-        if (carTag != null)
-        {
-            if (!exited)
-            {
-                exited = true;
                 OnChunkExited();
                 StartCoroutine(WaitAndDeactivate());
             }
 
 
-        }
-    }
+       
+    
 
     IEnumerator WaitAndDeactivate()
     {
