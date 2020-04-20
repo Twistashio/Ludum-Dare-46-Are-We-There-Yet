@@ -13,8 +13,8 @@ GameObject:
   - component: {fileID: 1063181140556561262}
   - component: {fileID: 5011006577824024786}
   m_Layer: 0
-  m_Name: Sphere
-  m_TagString: Untagged
+  m_Name: Hill
+  m_TagString: Hills
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -468,8 +468,8 @@ GameObject:
   - component: {fileID: 8451088396096923162}
   - component: {fileID: 727659364033453522}
   m_Layer: 0
-  m_Name: Sphere (3)
-  m_TagString: Untagged
+  m_Name: Hill
+  m_TagString: Hills
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -650,8 +650,8 @@ GameObject:
   - component: {fileID: 2501368245414705215}
   - component: {fileID: 5111487319767913266}
   m_Layer: 0
-  m_Name: Sphere (2)
-  m_TagString: Untagged
+  m_Name: Hill
+  m_TagString: Hills
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -779,8 +779,8 @@ GameObject:
   - component: {fileID: 448888275147900199}
   - component: {fileID: 2939749838584121196}
   m_Layer: 0
-  m_Name: Sphere (1)
-  m_TagString: Untagged
+  m_Name: Hill
+  m_TagString: Hills
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

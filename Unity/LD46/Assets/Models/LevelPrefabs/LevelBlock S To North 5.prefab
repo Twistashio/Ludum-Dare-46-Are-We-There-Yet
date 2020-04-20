@@ -464,8 +464,8 @@ GameObject:
   - component: {fileID: 1991669514275790379}
   - component: {fileID: 6861665352955668961}
   m_Layer: 0
-  m_Name: Sphere (2)
-  m_TagString: Untagged
+  m_Name: Hill
+  m_TagString: Hills
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -594,8 +594,8 @@ GameObject:
   - component: {fileID: 2010130208207818412}
   - component: {fileID: 1760283699724099471}
   m_Layer: 0
-  m_Name: Sphere (3)
-  m_TagString: Untagged
+  m_Name: Hill
+  m_TagString: Hills
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
