@@ -34,7 +34,7 @@ public class GameManager : MonoBehaviour
             gameHasEnded = true;
             Time.timeScale = 0.3f;
             Debug.Log("GameOver");
-            Invoke("Screen", 2f);
+            Invoke("Screen", 1f);
         }
     }
 

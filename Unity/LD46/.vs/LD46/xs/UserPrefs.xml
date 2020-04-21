@@ -1,5 +1,5 @@
 ﻿<Properties StartupConfiguration="{B1DFBC55-95C2-9078-623F-D1A132B80019}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/BoringMeter.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Tutorial.cs">
     <Files>
       <File FileName="Assets/PlayerCollision.cs" Line="25" Column="14" />
       <File FileName="Assets/GameManager.cs" Line="46" Column="1" />
@@ -8,20 +8,19 @@
       <File FileName="Assets/Scripts/collectable.cs" Line="15" Column="1" />
       <File FileName="Assets/Scripts/Money.cs" Line="17" Column="49" />
       <File FileName="Assets/Scripts/BorringManager.cs" Line="27" Column="18" />
-      <File FileName="Assets/Scripts/TriggerExit.cs" Line="15" Column="6" />
-      <File FileName="Assets/Scripts/MainMenuHander.cs" Line="39" Column="1" />
+      <File FileName="Assets/Scripts/TriggerExit.cs" Line="7" Column="27" />
+      <File FileName="Assets/Scripts/MainMenuHander.cs" Line="25" Column="1" />
       <File FileName="Assets/Scripts/GameOverHandler.cs" Line="25" Column="2" />
-      <File FileName="Assets/Tutorial.cs" Line="46" Column="1" />
-      <File FileName="Assets/Scripts/HeadStates.cs" Line="1" Column="1" />
+      <File FileName="Assets/Tutorial.cs" Line="53" Column="66" />
+      <File FileName="Assets/Scripts/HeadStates.cs" Line="36" Column="10" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="LD46" expanded="True">
             <Node name="Assets" expanded="True">
-              <Node name="Scripts" expanded="True">
-                <Node name="BoringMeter.cs" selected="True" />
-              </Node>
+              <Node name="Scripts" expanded="True" />
+              <Node name="Tutorial.cs" selected="True" />
             </Node>
           </Node>
         </State>
