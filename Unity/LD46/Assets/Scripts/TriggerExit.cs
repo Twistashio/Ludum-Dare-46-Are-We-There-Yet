@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class TriggerExit : MonoBehaviour
 {
-    public float delay = 5f;
+    public float delay = 8f;
     
     public delegate void ExitAction();
     public static event ExitAction OnChunkExited;

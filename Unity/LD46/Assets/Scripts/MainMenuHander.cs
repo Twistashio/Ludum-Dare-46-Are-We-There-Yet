@@ -6,18 +6,28 @@ using UnityEngine.SceneManagement;
 
 public class MainMenuHander : MonoBehaviour
 {
+    public GameObject scorePanel;
+    public GameObject mainPanel;
 
-    
+    public Text scoreText;
+
+    public void Start()
+    {
+        scorePanel.SetActive(false);
+    }
     public void StartGame()
     {
         Time.timeScale = 1f;
-        SceneManager.LoadScene("TesterScene");
+        SceneManager.LoadScene("Tutorial");
         GameManager.gameHasEnded = false;
         Money.moneyAmount = 0f;
     }
 
     public void Scores()
     {
+        scorePanel.SetActive(true);
+        mainPanel.SetActive(false);
+        scoreText.text = PlayerPrefs.GetInt("Score").ToString() + " " + "units";
         Time.timeScale = 1f;
         Debug.Log("Scores");
     }
@@ -27,16 +37,16 @@ public class MainMenuHander : MonoBehaviour
         Application.Quit();
     }
 
-    public void MainMenu()
+
+    public void Reset()
     {
-        Time.timeScale = 1f;
-        SceneManager.LoadScene("MainMenu");
-        Debug.Log("MainMenu");
-        GameManager.gameHasEnded = false;
-        Money.moneyAmount = 0f;
-
-
+        PlayerPrefs.DeleteAll();
+        scoreText.text = "Your Scores Have Been Reset";
     }
 
-
+    public void Back()
+    {
+        scorePanel.SetActive(false);
+        mainPanel.SetActive(true);
+    }
 }

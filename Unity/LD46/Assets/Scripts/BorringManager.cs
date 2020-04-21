@@ -17,6 +17,9 @@ public class BorringManager : MonoBehaviour
     public static bool toysPressed;
     public static bool tabletPressed;
 
+    public bool toys = false;
+    public bool tablet = false;
+
 
     public GameObject boringMenuUI;
 
@@ -52,8 +55,25 @@ public class BorringManager : MonoBehaviour
             else
             {
                 BoringMenuClose();
-            }   
-       }
+            }
+        }
+        if (Money.moneyAmount >= 5f && toys == false )
+        {
+            toysButton.interactable = true;
+        }
+        else
+        {
+            toysButton.interactable = false;
+        }
+
+        if (Money.moneyAmount >= 9f && tablet == false)
+        {
+            tabletButton.interactable = true;
+        }
+        else
+        {
+            tabletButton.interactable = false;
+        }
     }
 
     //Opens the  menu
@@ -86,45 +106,46 @@ public class BorringManager : MonoBehaviour
 
     public void Keys()
     {
-        
-            if (keysPressed == true && DrivingControler.CanMove == false)
-            {
-                BoringMeter.slideValue = BoringMeter.slideValue - keysRemoveValue;
-                keysPressed = false;
-                keySlider.value = 0f;
-                value = 3f;
+
+        if (keysPressed == true && DrivingControler.CanMove == false)
+        {
+            BoringMeter.slideValue = BoringMeter.slideValue - keysRemoveValue;
+            keysPressed = false;
+            keySlider.value = 0f;
+            value = 3f;
             keyButton.interactable = true;
+
+        }
+        else
+        {
+            if (DrivingControler.CanMove == false)
+            {
+                StartCoroutine(keyCounter());
+                keyButton.interactable = false;
 
             }
             else
             {
-                if (DrivingControler.CanMove == false)
-                {
-                    StartCoroutine(keyCounter());
-                keyButton.interactable = false;
-                
-                }
-                else
-                {
-                    keySlider.value = 0f;
+                keySlider.value = 0f;
                 keyButton.interactable = true;
-                }
-            }
 
+            }
         }
-    
-    
+
+    }
+
+
     IEnumerator keyCounter()
     {
 
-        
+
 
         yield return new WaitForSeconds(0.3f);
         keySlider.value += 0.3f;
 
         if (keySlider.value == 1f)
         {
-            
+
             keysPressed = true;
             Keys();
         }
@@ -133,67 +154,123 @@ public class BorringManager : MonoBehaviour
             Keys();
 
         }
-        
+
 
 
     }
 
     public void Toys()
     {
-        if (Money.moneyAmount >= 5)
+
+        if (toysPressed == true && DrivingControler.CanMove == false)
         {
-            if (toysPressed == true && DrivingControler.CanMove == false)
+            BoringMeter.slideValue = BoringMeter.slideValue - toysRemoveValue;
+            toysPressed = false;
+            toySlider.value = 0f;
+            value = 3f;
+            toysButton.interactable = true;
+
+        }
+        else
+        {
+            if (DrivingControler.CanMove == false)
             {
-                BoringMeter.slideValue = BoringMeter.slideValue - toysRemoveValue;
-                toysPressed = false;
-                toySlider.value = 0f;
-                value = 3f;
-                toysButton.interactable = true;
+                StartCoroutine(toysCounter());
+                toysButton.interactable = false;
+                toys = true;
 
             }
             else
             {
-                if (DrivingControler.CanMove == false)
-                {
-                    StartCoroutine(toysCounter());
-                    toysButton.interactable = false;
-
-                }
-                else
-                {
-                    toySlider.value = 0f;
-                    toysButton.interactable = true;
-                }
+                toySlider.value = 0f;
+                toysButton.interactable = true;
+                toys = false;
             }
-        }
-        else
-        {
-            toysButton.interactable = false;
         }
     }
 
 
-    IEnumerator toysCounter()
+        IEnumerator toysCounter()
+        {
+
+
+
+            yield return new WaitForSeconds(0.3f);
+            toySlider.value += 0.2f;
+
+            if (toySlider.value == 1f)
+            {
+
+                toysPressed = true;
+                toys = false;
+                Toys();
+            }
+            else
+            {
+                Toys();
+
+            }
+
+
+
+        }
+
+    public void Tablet()
+    {
+
+        if (tabletPressed == true && DrivingControler.CanMove == false)
+        {
+            BoringMeter.slideValue = BoringMeter.slideValue - tabletRemoveValue;
+            tabletPressed = false;
+            tabletSlider.value = 0f;
+            value = 3f;
+            tabletButton.interactable = true;
+
+        }
+        else
+        {
+            if (DrivingControler.CanMove == false)
+            {
+                StartCoroutine(tabletCounter());
+                tabletButton.interactable = false;
+                tablet = true;
+
+            }
+            else
+            {
+                toySlider.value = 0f;
+                toysButton.interactable = true;
+                tablet = false;
+            }
+        }
+    }
+
+
+    IEnumerator tabletCounter()
     {
 
 
 
         yield return new WaitForSeconds(0.3f);
-        toySlider.value += 0.2f;
+        tabletSlider.value += 0.14f;
 
-        if (toySlider.value == 1f)
+        if (tabletSlider.value == 1f)
         {
 
-            toysPressed = true;
-            Toys();
+            tabletPressed = true;
+            tablet = false;
+            Tablet();
         }
         else
         {
-            Toys();
+            Tablet();
 
         }
 
 
 
     }
+
+
+
 }
