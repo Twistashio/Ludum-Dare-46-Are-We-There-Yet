@@ -1,6 +1,6 @@
 A Game About Keeping Your Child From Dying Of Boredom
 
-
+![alt text](https://img.itch.zone/aW1nLzMyOTYzNjgucG5n/original/8xog32.png)
 
 In this game you have to manage keep your child dying from boredom while not trying to crash. 
 
